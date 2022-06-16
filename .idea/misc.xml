@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/list_item.xml" value="0.128" />
+        <entry key="app/src/main/res/layout/activity_gridview.xml" value="0.10277777777777777" />
         <entry key="app/src/main/res/layout/activity_listview.xml" value="0.10277777777777777" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.10277777777777777" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.10277777777777777" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.10277777777777777" />
+        <entry key="app/src/main/res/layout/layout_grid_item.xml" value="0.10277777777777777" />
         <entry key="app/src/main/res/layout/layout_list_item.xml" value="0.10277777777777777" />
       </map>
     </option>

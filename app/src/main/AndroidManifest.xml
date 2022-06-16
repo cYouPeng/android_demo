@@ -29,6 +29,7 @@
 <!--        <activity android:name="com.example.hello_android.listview.ListViewActivity"></activity>-->
 <!--        .表示包名，所以也可以写成-->
         <activity android:name=".listview.ListViewActivity"></activity>
+        <activity android:name=".gridview.GridviewActivity"></activity>
 
 
     </application>

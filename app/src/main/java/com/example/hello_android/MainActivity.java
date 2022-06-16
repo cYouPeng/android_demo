@@ -3,6 +3,7 @@ package com.example.hello_android;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.hello_android.gridview.GridviewActivity;
 import com.example.hello_android.listview.ListViewActivity;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
     private Button mBtnButton;
+    private Button mBtnGridview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
+        });
+        mBtnGridview = findViewById(R.id.btn_gridview);
+        mBtnGridview.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GridviewActivity.class);
+                startActivity(intent);
+            }
         });
 
 
