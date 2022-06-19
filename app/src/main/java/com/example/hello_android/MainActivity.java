@@ -5,7 +5,8 @@ import android.os.Bundle;
 
 import com.example.hello_android.gridview.GridviewActivity;
 import com.example.hello_android.listview.ListViewActivity;
-import com.google.android.material.snackbar.Snackbar;
+//import com.example.hello_android.ScrollViewActivity;
+//import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +18,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.hello_android.databinding.ActivityMainBinding;
+import com.example.hello_android.recyclerview.RecyclerViewActivity;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,10 +27,12 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
+//    private ActivityMainBinding binding;
 
     private Button mBtnButton;
     private Button mBtnGridview;
+    private Button mBtnScrollView;
+    private Button mBtnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_main);
-        mBtnButton = findViewById(R.id.btn_1);
+        mBtnButton = this.findViewById(R.id.btn_1);
         mBtnButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // 跳转Button演示界面
@@ -49,6 +53,21 @@ public class MainActivity extends AppCompatActivity {
         mBtnGridview.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GridviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnScrollView = findViewById(R.id.btn_sc);
+        mBtnScrollView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+;               Intent intent = new Intent(MainActivity.this, ScrollViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnRecyclerView = findViewById(R.id.btn_rv);
+        mBtnRecyclerView.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
             }
         });
