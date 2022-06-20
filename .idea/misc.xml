@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/activity_hor_recycler_view.xml" value="0.13148148148148148" />
         <entry key="app/src/main/res/layout/activity_linear_recycler_view.xml" value="0.10572916666666667" />
         <entry key="app/src/main/res/layout/activity_listview.xml" value="0.10277777777777777" />
+        <entry key="app/src/main/res/layout/activity_pu_recycler_view.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/activity_recycler_view.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/activity_scrollview.xml" value="0.10277777777777777" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.10277777777777777" />
@@ -20,6 +21,7 @@
         <entry key="app/src/main/res/layout/layout_hot_recycler_item.xml" value="0.13148148148148148" />
         <entry key="app/src/main/res/layout/layout_linear_recycler_item.xml" value="0.2421875" />
         <entry key="app/src/main/res/layout/layout_list_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_pu_recycler_item.xml" value="0.2421875" />
       </map>
     </option>
   </component>

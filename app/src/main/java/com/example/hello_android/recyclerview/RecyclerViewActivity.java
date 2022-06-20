@@ -14,6 +14,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     private Button mBtnLinear;
     private Button mBtnHor;
     private Button mBtnGrid;
+    private Button mBtnPu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,14 @@ public class RecyclerViewActivity extends AppCompatActivity {
         mBtnGrid.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(RecyclerViewActivity.this, GridRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnPu = findViewById(R.id.id_btn4);
+        mBtnPu.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerViewActivity.this, PuRecyclerViewActivity.class);
                 startActivity(intent);
             }
         });
